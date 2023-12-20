@@ -7,7 +7,7 @@ import Footer from "@/app/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "EnzoBorrelli Web | Home",
   description: "Enzo Borrelli Portfolio",
 };
 
@@ -18,8 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} w-screen h-screen bg-slate-500 flex justify-center text-slate-300`}>
-        <div className="h-screen w-screen max-w-4xl bg-slate-700 shadow">  
+      <body className={`${inter.className} w-full h-full bg-slate-500 flex justify-center text-slate-300`}>
+        <div className="h-full w-full max-w-4xl bg-slate-700 shadow shadow-white">  
         <Header />
         {children}
         <Footer />
