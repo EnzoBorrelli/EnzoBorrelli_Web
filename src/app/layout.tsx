@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} w-full h-full bg-slate-500 flex justify-center text-slate-300`}>
-        <div className="h-full w-full max-w-4xl bg-slate-700 shadow shadow-white">  
+        <div className="h-full w-full max-w-5xl bg-slate-700 shadow shadow-white">  
         <Header />
         {children}
         <Footer />
