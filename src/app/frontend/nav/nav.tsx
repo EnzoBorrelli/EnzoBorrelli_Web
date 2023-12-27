@@ -23,7 +23,7 @@ const navLinks = [
     },
   ];
 
-export default function nav() {
+export default function Nav() {
     const [menu, setMenu] = useState(false);
   const [menuIcon, setMenuIcon] = useState(false);
 
