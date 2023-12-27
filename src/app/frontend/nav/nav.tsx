@@ -7,19 +7,19 @@ import { RxCross2 } from "react-icons/rx";
 const navLinks = [
     {
       title: "Home",
-      path: "/",
+      path: "frontend",
     },
     {
       title: "Projects",
-      path: "projects",
+      path: "frontend/projects",
     },
     {
       title: "About",
-      path: "about",
+      path: "frontend/about",
     },
     {
       title: "Contact",
-      path: "contact",
+      path: "frontend/contact",
     },
   ];
 
