@@ -1,18 +1,21 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
-  MdCamera,
-  MdCameraRoll,
-  MdVideoCameraBack,
-  MdPhotoCamera,
-} from "react-icons/md";
-import { FaCode,FaCodeBranch,FaLaptopCode,FaFileCode } from "react-icons/fa";
+  FrontEndPhoneVariant,
+  VideoPhoneVariant,
+} from "./AnimatedBg/phoneVariant";
+import { FrontEndMDVariant, VideoMDVariant } from "./AnimatedBg/mediumVariant";
+import { FrontEndLgVariant, VideoLgVariant } from "./AnimatedBg/largeVariant";
+import { useState } from "react";
 
 const secStyle =
   "w-1/2 h-full relative shadow-inner text-black shadow-black flex flex-wrap text-center items-center justify-center";
 const h1Style = "text-2xl font-bold absolute z-10";
-const symbolStyle = "text-5xl absolute z-0 opacity-30";
+export const symbolStyle = "text-5xl absolute z-0 opacity-30";
 export default function Home() {
+  const [isLeftHover, setLeftIsHover] = useState(false);
+  const [isRightHover, setIsRightHover] = useState(false);
   return (
     <main className="w-full h-full">
       <div className="bg-white  flex flex-row flex-wrap w-full h-96">
@@ -22,85 +25,39 @@ export default function Home() {
             initial={{ x: -200 }}
             animate={{ x: 0 }}
             transition={{ duration: 1 }}
-            className={`${h1Style}`}
+            className={`md:text-3xl lg:text-4xl ${h1Style}`}
           >
-            Edicion de video
+            <Link
+              onMouseEnter={() => setLeftIsHover(true)}
+              onMouseLeave={() => setLeftIsHover(false)}
+              href="video"
+            >
+              Edicion de Video
+            </Link>
           </motion.h1>
-          <motion.div
-            initial={{ x: -200, y: -200 }}
-            animate={{ x: -50, y: -150 }}
-            transition={{ duration: 1 }}
-            className={`${symbolStyle}`}
-          >
-            <MdCamera />
-          </motion.div>
-          <motion.div
-            initial={{ x: -200, y: -200 }}
-            animate={{ x: 50, y: -80 }}
-            transition={{ duration: 1 }}
-            className={`${symbolStyle}`}
-          >
-            <MdCameraRoll />
-          </motion.div>
-          <motion.div
-            initial={{ x: -200, y: 200 }}
-            animate={{ x: -50, y: 150 }}
-            transition={{ duration: 1 }}
-            className={`${symbolStyle}`}
-          >
-            <MdVideoCameraBack />
-          </motion.div>
-          <motion.div
-            initial={{ x: -200, y: 200 }}
-            animate={{ x: 50, y: 80 }}
-            transition={{ duration: 1 }}
-            className={`${symbolStyle}`}
-          >
-            <MdPhotoCamera />
-          </motion.div>
+          <VideoPhoneVariant />
+          <VideoMDVariant />
+          <VideoLgVariant isHover={isLeftHover} />
         </section>
-{/* seccion sobre frontend */}
+        {/* seccion sobre frontend */}
         <section className={`bg-emerald-200 ${secStyle}`}>
           <motion.h1
             initial={{ x: 200 }}
             animate={{ x: 0 }}
             transition={{ duration: 1 }}
-            className={`${h1Style}`}
+            className={`md:text-3xl lg:text-4xl ${h1Style}`}
           >
-            Desarrollo FrontEnd
+            <Link
+              onMouseEnter={() => setIsRightHover(true)}
+              onMouseLeave={() => setIsRightHover(false)}
+              href="frontend"
+            >
+              Desarrollo FrontEnd
+            </Link>
           </motion.h1>
-          <motion.div
-            initial={{ x: 200, y: -200 }}
-            animate={{ x: 50, y: -150 }}
-            transition={{ duration: 1 }}
-            className={`${symbolStyle}`}
-          >
-            <FaCode />
-          </motion.div>
-          <motion.div
-            initial={{ x: 200, y: -200 }}
-            animate={{ x: -50, y: -80 }}
-            transition={{ duration: 1 }}
-            className={`${symbolStyle}`}
-          >
-            <FaCodeBranch />
-          </motion.div>
-          <motion.div
-            initial={{ x: 200, y: 200 }}
-            animate={{ x: 50, y: 150 }}
-            transition={{ duration: 1 }}
-            className={`${symbolStyle}`}
-          >
-            <FaLaptopCode />
-          </motion.div>
-          <motion.div
-            initial={{ x: 200, y: 200 }}
-            animate={{ x: -50, y: 80 }}
-            transition={{ duration: 1 }}
-            className={`${symbolStyle}`}
-          >
-            <FaFileCode />
-          </motion.div>
+          <FrontEndPhoneVariant />
+          <FrontEndMDVariant />
+          <FrontEndLgVariant isHover={isRightHover} />
         </section>
       </div>
     </main>
