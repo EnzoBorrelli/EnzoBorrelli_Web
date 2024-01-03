@@ -32,7 +32,7 @@ export default function Home() {
               onMouseLeave={() => setLeftIsHover(false)}
               href="video"
             >
-              Edicion de Video
+              Video Editor
             </Link>
           </motion.h1>
           <VideoPhoneVariant />
@@ -52,7 +52,7 @@ export default function Home() {
               onMouseLeave={() => setIsRightHover(false)}
               href="frontend"
             >
-              Desarrollo FrontEnd
+              FrontEnd Developer
             </Link>
           </motion.h1>
           <FrontEndPhoneVariant />
