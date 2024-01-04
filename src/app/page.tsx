@@ -12,7 +12,9 @@ import { useState } from "react";
 const secStyle =
   "w-1/2 h-full relative shadow-inner text-black shadow-black flex flex-wrap text-center items-center justify-center";
 const h1Style = "text-2xl font-bold absolute z-10";
-export const symbolStyle = "text-5xl absolute z-0 opacity-30";
+
+
+
 export default function Home() {
   const [isLeftHover, setLeftIsHover] = useState(false);
   const [isRightHover, setIsRightHover] = useState(false);

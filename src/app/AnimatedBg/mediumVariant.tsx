@@ -6,7 +6,7 @@ import {
   MdPhotoCamera,
 } from "react-icons/md";
 import { FaCode, FaCodeBranch, FaLaptopCode, FaFileCode } from "react-icons/fa";
-import { symbolStyle } from "../page";
+const symbolStyle = "text-5xl absolute z-0 opacity-30";
 export const VideoMDVariant = () => {
   return  (
   <motion.div className="hidden md:flex lg:hidden">  
