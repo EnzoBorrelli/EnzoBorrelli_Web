@@ -33,7 +33,7 @@ const Socials = [
     name:"Instagram",
     icon: <FaInstagram />,
     url: "https://www.instagram.com/ender_devlogs/",
-    color: "hover:text-white hover:bg-gradient-to-r from-purple-500 to-pink-500",
+    color: "hover:text-white hover:bg-gradient-to-tr from-purple-500 to-pink-500",
   },
   {
     name:"Youtube",

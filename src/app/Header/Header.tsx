@@ -3,13 +3,22 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
+import { useContext } from "react";
+import LanguageContext from "@/providers/LanguageContext";
 // Font files can be colocated inside of `app`
 const myFont = localFont({
   src: "ender-font.ttf",
 });
 
 export default function Header() {
+  const languageContext = useContext(LanguageContext);
+
+  if (!languageContext) {
+    // El contexto es undefined, puedes manejar esto de alguna manera (lanzar una excepción, mostrar un mensaje de error, etc.)
+    return <></>;
+  }
+
+  const { texts, handleLanguage } = languageContext;
 
   return (
     <header className="bg-slate-900 p-2 py-4 flex flex-nowrap flex-col sm:flex-row justify-between z-0">
@@ -24,10 +33,18 @@ export default function Header() {
           <h1
             className={`${myFont.className} text-2xl text-center mx-1 mt-2 hover:text-slate-400`}
           >
-            Enzo Borrelli {}
+            Enzo Borrelli {texts.home}
           </h1>
         </Link>
       </motion.div>
+      <select name="language" onChange={handleLanguage}>
+              <option className="LandingMenu-option" value="en">
+              en
+              </option>
+              <option className="LandingMenu-option" value="es">
+              es
+              </option>
+            </select>
     </header>
   );
 }
