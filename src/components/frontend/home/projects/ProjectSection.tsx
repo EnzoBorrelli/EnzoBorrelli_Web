@@ -87,10 +87,12 @@ const projectVariants = {
 export default function ProjectSection({
   ProjectsMax,
 }: {
-  ProjectsMax : number;
+  ProjectsMax: number;
 }) {
   const text = useLang();
-  if (!text) return <></>;
+  if (!text) {
+    return <></>;
+  }
 
   const [hoverStates, setHoverStates] = useState(
     Array(projects.length).fill(false)

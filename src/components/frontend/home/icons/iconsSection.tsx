@@ -85,8 +85,10 @@ const iconVariants = {
 };
 
 export default function IconSection() {
-  const text = useLang()
-  if(!text)return <></>;
+  const text = useLang();
+  if (!text) {
+    return <></>;
+  }
   return (
     <section className={sectionsStyles}>
       <div>
