@@ -28,11 +28,9 @@ const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
     if (e.target.value === "es") {
       setLanguage("es");
       setTexts(LanguageList.es);
-      document.title = "EM Robots - tienda virtual";
     } else if (e.target.value === "en") {
       setLanguage("en");
       setTexts(LanguageList.en);
-      document.title = "EM Robots - virtual shop";
     }
   };
 

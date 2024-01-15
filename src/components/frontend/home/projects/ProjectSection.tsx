@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { sectionsStyles } from "../stylesConst";
 import Image from "next/image";
+import useLang from "@/languages/useLang";
 
 const projects = [
   {
@@ -26,6 +26,48 @@ const projects = [
     web: "https://tailwindcss.com/docs/border-color",
     github: "https://tailwindcss.com/docs/border-color",
   },
+  {
+    title: "placeholder",
+    image: "/images/projects-images/placeholder.webp",
+    h3: "this is a placeholder to hold the place",
+    web: "https://tailwindcss.com/docs/border-color",
+    github: "https://tailwindcss.com/docs/border-color",
+  },
+  {
+    title: "placeholder",
+    image: "/images/projects-images/placeholder.webp",
+    h3: "this is a placeholder to hold the place",
+    web: "https://tailwindcss.com/docs/border-color",
+    github: "https://tailwindcss.com/docs/border-color",
+  },
+  {
+    title: "placeholder",
+    image: "/images/projects-images/placeholder.webp",
+    h3: "this is a placeholder to hold the place",
+    web: "https://tailwindcss.com/docs/border-color",
+    github: "https://tailwindcss.com/docs/border-color",
+  },
+  {
+    title: "placeholder",
+    image: "/images/projects-images/placeholder.webp",
+    h3: "this is a placeholder to hold the place",
+    web: "https://tailwindcss.com/docs/border-color",
+    github: "https://tailwindcss.com/docs/border-color",
+  },
+  {
+    title: "placeholder",
+    image: "/images/projects-images/placeholder.webp",
+    h3: "this is a placeholder to hold the place",
+    web: "https://tailwindcss.com/docs/border-color",
+    github: "https://tailwindcss.com/docs/border-color",
+  },
+  {
+    title: "placeholder",
+    image: "/images/projects-images/placeholder.webp",
+    h3: "this is a placeholder to hold the place",
+    web: "https://tailwindcss.com/docs/border-color",
+    github: "https://tailwindcss.com/docs/border-color",
+  },
 ];
 
 const projectVariants = {
@@ -37,12 +79,19 @@ const projectVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.5 * index,
+      delay: 0.15 * index,
     },
   }),
 };
 
-export default function ProjectSection() {
+export default function ProjectSection({
+  ProjectsMax,
+}: {
+  ProjectsMax : number;
+}) {
+  const text = useLang();
+  if (!text) return <></>;
+
   const [hoverStates, setHoverStates] = useState(
     Array(projects.length).fill(false)
   );
@@ -68,10 +117,10 @@ export default function ProjectSection() {
         transition={{ duration: 1 }}
         className="text-2xl font-bold mt-8 sm:mx-16"
       >
-        Recent projects
+        {text.recentProjects}
       </motion.h2>
-      <motion.section className={sectionsStyles}>
-        {projects.map((project, index) => (
+      <motion.section className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-3 md:-ml-1 mb-3">
+        {projects.slice(0, ProjectsMax).map((project, index) => (
           <motion.div
             key={index}
             variants={projectVariants}
@@ -90,11 +139,13 @@ export default function ProjectSection() {
               loading="lazy"
             />
             <div
-              className={`absolute top-0 left-50 w-[350px] md:w-fit h-full backdrop-blur-sm ${
-                hoverStates[index] ? "" : "md:backdrop-blur-0 md:hidden"
+              className={`absolute top-0 left-50 w-[350px] md:w-fit h-full backdrop-blur-sm backdrop-brightness-50 ${
+                hoverStates[index]
+                  ? ""
+                  : "md:backdrop-blur-0 md:backdrop-brightness-0 md:hidden"
               } flex flex-col justify-center items-center gap-2 px-2`}
             >
-              <h3 className="text-center font-bold text-lg text-black">
+              <h3 className="text-center font-bold text-lg text-white">
                 {project.h3}
               </h3>
               <motion.a

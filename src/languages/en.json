@@ -1,3 +1,10 @@
 {
-    "home":"hola"
+  "videoSelector": "Video Editor",
+  "frontEndSelector": "FrontEnd Developer",
+  "frontPresentation": "Hello! I am Enzo Borrelli, a frontend developer specialized in Next.js. My focus revolves around crafting unique and efficient web experiences for users.",
+  "frontLang":"Languages I work with",
+  "frontTools":"dev tools i use",
+  "recentProjects":"recent projects",
+  "showMore":"Show More",
+  "showLess":"Show Less"
 }

@@ -12,6 +12,7 @@ import {
 } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { TbBrandVscode } from "react-icons/tb";
+import useLang from "@/languages/useLang";
 
 const langIcons = [
   {
@@ -84,6 +85,8 @@ const iconVariants = {
 };
 
 export default function IconSection() {
+  const text = useLang()
+  if(!text)return <></>;
   return (
     <section className={sectionsStyles}>
       <div>
@@ -93,7 +96,7 @@ export default function IconSection() {
           transition={{ duration: 1 }}
           className="text-2xl font-bold my-1 md:mx-16"
         >
-          Languages i work with
+          {text.frontLang}
         </motion.h2>
         <div className={`flex-row ${iconDivStyle}`}>
           {langIcons.map((icon, index) => (
@@ -122,7 +125,7 @@ export default function IconSection() {
           transition={{ duration: 1 }}
           className="text-2xl font-bold my-1 md:mx-16"
         >
-          dev tools i use
+          {text.frontTools}
         </motion.h2>
         <div className={`flex-row-reverse ${iconDivStyle}`}>
           {toolsIcons.map((icon, index) => (

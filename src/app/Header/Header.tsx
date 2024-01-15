@@ -33,16 +33,16 @@ export default function Header() {
           <h1
             className={`${myFont.className} text-2xl text-center mx-1 mt-2 hover:text-slate-400`}
           >
-            Enzo Borrelli {texts.home}
+            Enzo Borrelli
           </h1>
         </Link>
       </motion.div>
-      <select name="language" onChange={handleLanguage}>
-              <option className="LandingMenu-option" value="en">
-              en
+      <select className="w-14 h-14 p-2 text-2xl flex flex-wrap justify-center items-center rounded-lg bg-slate-700" name="language" onChange={handleLanguage}>
+              <option value="en">
+              🇬🇧
               </option>
-              <option className="LandingMenu-option" value="es">
-              es
+              <option value="es">
+              🇪🇦
               </option>
             </select>
     </header>

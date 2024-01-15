@@ -3,8 +3,12 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { sectionsStyles } from "../stylesConst";
+import useLang from "@/languages/useLang";
 
 export default function TopSection() {
+  const text = useLang();
+  if (!text) return <></>;
+
   return (
     <>
       <motion.h1
@@ -13,7 +17,7 @@ export default function TopSection() {
         transition={{ duration: 1 }}
         className="text-3xl font-extrabold py-2 md:mt-3"
       >
-        FrontEnd Developer
+        {text.frontEndSelector}
       </motion.h1>
       <section className={sectionsStyles}>
         <motion.div
@@ -49,9 +53,7 @@ export default function TopSection() {
           animate={{ opacity: 1 }}
           className="mt-4 text-center text-slate-500 md:text-lg md:mr-10 md:ml-4"
         >
-          Hello! I am Enzo Borrelli, a frontend developer specialized in
-          Next.js. My focus revolves around crafting unique and efficient web
-          experiences for users.
+          {text.frontPresentation}
         </motion.h2>
       </section>
     </>
