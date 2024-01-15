@@ -10,9 +10,11 @@ import useLang from "@/languages/useLang";
 
 export default function VideoSelector() {
   const text = useLang();
-  if (!text) return <></>;
-
   const [isHover, setHover] = useState(false);
+  if (!text) {
+    return <></>;
+  }
+
   return (
     <section className="bg-orange-200 w-1/2 h-full relative shadow-inner text-black shadow-black flex flex-wrap text-center items-center justify-center">
       <motion.h1
