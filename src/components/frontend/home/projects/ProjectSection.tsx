@@ -89,14 +89,14 @@ export default function ProjectSection({
 }: {
   ProjectsMax: number;
 }) {
-  const text = useLang();
-  if (!text) {
-    return <></>;
-  }
-
+  
   const [hoverStates, setHoverStates] = useState(
     Array(projects.length).fill(false)
-  );
+    );
+    const text = useLang();
+    if (!text) {
+      return <></>;
+    }
 
   const handleMouseEnter = (index: number) => {
     // Actualizar solo el estado correspondiente al índice del proyecto
