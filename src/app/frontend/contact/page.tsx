@@ -1,7 +1,11 @@
-import React from 'react'
+import { mainStyle } from "@/components/frontend/home/stylesConst";
+import Form from "@/components/sendEmail/Form";
+import React from "react";
 
 export default function Contact() {
   return (
-    <div>Contact</div>
-  )
+    <main className={mainStyle}>
+      <Form />
+    </main>
+  );
 }

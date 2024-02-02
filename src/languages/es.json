@@ -6,5 +6,11 @@
   "frontTools": "herramientas que uso",
   "recentProjects": "proyectos recientes",
   "showMore":"Mostrar Más",
-  "showLess":"Mostrar Menos"
+  "showLess":"Mostrar Menos",
+  "contactName": "nombre",
+  "namePlaceHolder": "Ya sabes quien",
+  "mailPlaceholder":"nombre_correo@gmail.com",
+  "message":"mensaje",
+  "msgPlaceHolder":"un texto para que empecemos negocios",
+  "sendBtn":"send mail"
 }
