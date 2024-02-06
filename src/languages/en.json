@@ -8,9 +8,12 @@
   "showMore":"Show More",
   "showLess":"Show Less",
   "contactName": "Name",
-  "namePlaceHolder": "You Know Who",
-  "mailPlaceholder":"email_Name@gmail.com",
+  "namePlaceHolder": "First name & last name",
+  "mailPlaceholder":"emailAdress@gmail.com",
   "message":"message",
-  "msgPlaceHolder":"a text to start business with me",
-  "sendBtn":"send mail"
+  "msgPlaceHolder":"a text with details about the work we are going to do",
+  "sendBtn":"send mail",
+  "mailAlert":"Mail Delivered",
+  "alertClose":"Click to close",
+  "contactText":"Let's work together 👌! Send me an email and I will get in touch with you as soon as possible 😎."
 }

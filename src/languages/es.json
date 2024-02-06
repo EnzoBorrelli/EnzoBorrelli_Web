@@ -8,9 +8,12 @@
   "showMore":"Mostrar Más",
   "showLess":"Mostrar Menos",
   "contactName": "nombre",
-  "namePlaceHolder": "Ya sabes quien",
-  "mailPlaceholder":"nombre_correo@gmail.com",
+  "namePlaceHolder": "Nombre y Apellido",
+  "mailPlaceholder":"direccionDeCorreo@gmail.com",
   "message":"mensaje",
-  "msgPlaceHolder":"un texto para que empecemos negocios",
-  "sendBtn":"send mail"
+  "msgPlaceHolder":"un texto con detalles sobre el trabajo que realizaremos",
+  "sendBtn":"mandar mail",
+  "mailAlert":"Correo Enviado",
+  "alertClose":"Click para cerrar",
+  "contactText":"Trabajemos juntos 👌! Mandame un correo y me comunicare contigo lo antes posible 😎"
 }
