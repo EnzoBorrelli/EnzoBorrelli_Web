@@ -7,19 +7,19 @@ import { RxCross2 } from "react-icons/rx";
 const navLinks = [
     {
       title: "Home",
-      path: "/frontend",
+      path: "/video",
     },
     {
-      title: "Projects",
-      path: "/frontend/projects",
+      title: "Videos",
+      path: "/video/videos",
     },
     {
       title: "About",
-      path: "/frontend/about",
+      path: "/video/about",
     },
     {
       title: "Contact",
-      path: "/frontend/contact",
+      path: "/video/contact",
     },
   ];
 
@@ -32,7 +32,7 @@ export default function Nav() {
     setMenuIcon(!menuIcon);
   }
   return (
-    <nav className="bg-gradient-to-t from-teal-600 to-slate-800 sm:py-2">
+    <nav className="bg-gradient-to-b sm:bg-gradient-to-t from-pink-600 to-slate-800 sm:py-2">
         <button
           className="my-3 text-2xl sm:hidden sm:pointer-events-none"
           onClick={togMenu}
@@ -45,9 +45,9 @@ export default function Nav() {
           }`}
         >
           {navLinks.map((link, index) => (
-            <li key={index} className="bg-gradient-to-b from-teal-500 to-slate-500 sm:bg-none w-full sm:w-fit flex justify-center py-2 sm:py-0 shadow-sm shadow-teal-800 sm:shadow-none">
+            <li key={index} className="bg-gradient-to-t from-pink-600 to-rose-400 sm:bg-none w-full sm:w-fit flex justify-center py-2 sm:py-0 shadow-sm shadow-rose-700 sm:shadow-none">
               <Link
-                className="relative font-bold text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-teal-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+                className="relative font-bold text-l w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-pink-300 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
                 href={link.path}
               >
                 {link.title}

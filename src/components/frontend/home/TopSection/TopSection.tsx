@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import { motion } from "framer-motion";
-import { sectionsStyles } from "../stylesConst";
+import { sectionsStyles } from "../../../stylesConst";
 import useLang from "@/languages/useLang";
 
 export default function TopSection() {

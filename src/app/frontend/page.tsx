@@ -2,7 +2,7 @@
 import TopSection from "@/components/frontend/home/TopSection/TopSection";
 import IconSection from "@/components/frontend/home/icons/iconsSection";
 import ProjectSection from "@/components/frontend/home/projects/ProjectSection";
-import { mainStyle } from "@/components/frontend/home/stylesConst";
+import { mainStyle } from "@/components/stylesConst";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

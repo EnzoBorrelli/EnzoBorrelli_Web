@@ -2,7 +2,7 @@
 import {
   aboutDivStyle,
   mainStyle,
-} from "@/components/frontend/home/stylesConst";
+} from "@/components/stylesConst";
 import useLang from "@/languages/useLang";
 import Image from "next/image";
 import Link from "next/link";

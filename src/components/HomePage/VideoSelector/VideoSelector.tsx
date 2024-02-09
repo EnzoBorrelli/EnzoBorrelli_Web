@@ -16,20 +16,19 @@ export default function VideoSelector() {
   }
 
   return (
-    <section className="bg-orange-200 w-1/2 h-full relative shadow-inner text-black shadow-black flex flex-wrap text-center items-center justify-center">
+    <section
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      className="bg-gradient-to-tr from-rose-400 to-amber-300 overflow-hidden w-1/2 h-full relative shadow-inner text-black shadow-black flex flex-wrap text-center items-center justify-center"
+    >
       <motion.h1
         initial={{ x: -200 }}
         animate={{ x: 0 }}
+        whileHover={{ rotateZ:-15}}
         transition={{ duration: 1 }}
         className="md:text-3xl lg:text-4xl text-2xl font-bold absolute z-10"
       >
-        <Link
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-          href="video"
-        >
-          {text.videoSelector}
-        </Link>
+        <Link href="video">{text.videoSelector}</Link>
       </motion.h1>
       <VideoPhoneVariant />
       <VideoMDVariant />

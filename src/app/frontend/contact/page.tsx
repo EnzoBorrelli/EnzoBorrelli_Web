@@ -1,4 +1,4 @@
-import { mainStyle } from "@/components/frontend/home/stylesConst";
+import { mainStyle } from "@/components/stylesConst";
 import Form from "@/components/sendEmail/Form";
 import React from "react";
 import Paragraph from "./Paragraph";

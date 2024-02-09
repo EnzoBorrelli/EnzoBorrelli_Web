@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { iconDivStyle, iconLinkStyle, sectionsStyles } from "../stylesConst";
+import { iconDivStyle, iconLinkStyle, sectionsStyles } from "../../../stylesConst";
 import {
   SiHtml5,
   SiCss3,

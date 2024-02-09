@@ -1,7 +1,7 @@
 'use client'
 import ProjectSection from '@/components/frontend/home/projects/ProjectSection'
 import ShowMoreBtn from '@/components/frontend/home/projects/showMoreBtn';
-import { mainStyle } from '@/components/frontend/home/stylesConst'
+import { mainStyle } from '@/components/stylesConst'
 import React, { useState } from 'react'
 
 export default function Projects(){

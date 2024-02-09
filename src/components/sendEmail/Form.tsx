@@ -113,7 +113,7 @@ export default function Form() {
             animate={isBtnPressed ? "animate" : "initial"}
             className={`absolute left-0 top-0 ${
               isFormFilled
-                ? "bg-teal-500 text-teal-500"
+                ? "bg-green-500 text-green-500"
                 : "bg-red-500 text-red-500"
             } h-full p-2`}
           >
