@@ -16,9 +16,10 @@ export const iconLinkStyle = "shadow-md p-1";
 //styles used in the video section
 export const aboutBtnStyle =
   "bg-gradient-to-t from-rose-400 to-pink-300 w-fit p-1 rounded-md border-2 border-pink-800 text-black hover:animate-bounce";
-export const H2Style = "text-xl font-bold mb-2 text-center md:text-left";
+export const H2Style = "flex items-center font-bold mb-2 gap-1 text-center md:text-left";
+export const LinkStyle = " text-xl text-slate-500 font-bold text-center md:text-left";
 export const videoPortraitDivStyle =
-  "grid place-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-6 grid-rows-3 sm:grid-rows-2 md:grid-rows-1 gap-2";
+  "grid place-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-6 grid-rows-3 sm:grid-rows-2 md:grid-rows-1 gap-2 overflow-hidden";
 export const videoLandscapeDivStyle =
-  "grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-4 grid-rows-4 sm:grid-rows-2 md:grid-rows-1 gap-2";
+  "grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-4 grid-rows-4 sm:grid-rows-2 md:grid-rows-1 gap-2 overflow-hidden";
 export const ImageStyle = "rounded-lg border-2 border-slate-400";

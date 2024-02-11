@@ -53,7 +53,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 w-full h-24 sm:max-h-14 flex flex-col flex-nowrap items-center sm:flex-row sm:justify-between sm:px-4">
       <h1 className={`${myFont.className} text-xl text-center my-4`}>
-        ©2024 Enzo Borrelli
+        ©2023 Enzo Borrelli
       </h1>
       <nav>
         <ul className="flex flex-wrap flex-row gap-3 mb-4 sm:mt-4">
