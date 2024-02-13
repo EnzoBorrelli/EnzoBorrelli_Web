@@ -65,7 +65,7 @@ export default function EnglishYTchannel() {
           rel="noopener noreferrer"
           className={LinkStyle}
         >
-          Endy's Debug Diaries
+          Endy&apos;s Debug Diaries
         </motion.a>
       </h2>
       <div className={videoLandscapeDivStyle}>

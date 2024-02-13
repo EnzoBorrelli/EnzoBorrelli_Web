@@ -49,7 +49,7 @@ export default function Form() {
     } else {
       setIsFormFilled(true);
     }
-  });
+  },[nameVal.length,mailVal.length,textVal.length]);
 
   function BtnPressed() {
     setIsBtnPressed(true);
