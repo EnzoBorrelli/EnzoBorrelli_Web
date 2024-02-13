@@ -60,12 +60,12 @@ export default function EnglishYTchannel() {
         <motion.a
         initial={{scaleX:1}}
         whileHover={{scaleX:0.9}}
-          href='https://www.youtube.com/'
+          href='https://www.youtube.com/channel/UCCAe4j8TyxrDxHolFnYaTtA'
           target="_blank"
           rel="noopener noreferrer"
           className={LinkStyle}
         >
-          template(Endy the programmer)
+          Endy's Debug Diaries
         </motion.a>
       </h2>
       <div className={videoLandscapeDivStyle}>

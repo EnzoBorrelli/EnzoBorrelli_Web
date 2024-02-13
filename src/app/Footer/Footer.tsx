@@ -44,7 +44,7 @@ const Socials = [
   {
     name: "Youtube",
     icon: <FaYoutube />,
-    url: "https://www.youtube.com/channel/UCAzNjbtcFgfFikHx8R3l84w",
+    url: "https://www.youtube.com/channel/UCCAe4j8TyxrDxHolFnYaTtA",
     color: "hover:text-white hover:bg-red-600",
   },
 ];

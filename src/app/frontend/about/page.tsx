@@ -1,6 +1,8 @@
 "use client";
 import {
+  aboutBtnStyle,
   aboutDivStyle,
+  frontBtnColor,
   mainStyle,
 } from "@/components/stylesConst";
 import useLang from "@/languages/useLang";
@@ -69,7 +71,7 @@ export default function About() {
         <p className="text-center flex flex-col items-center my-4 gap-2">
           {text.frontAbout_firstHTML}
           <a
-            className="bg-teal-500 w-fit p-2 rounded-md border-2 border-teal-800 text-black hover:animate-bounce"
+            className={`${aboutBtnStyle} ${frontBtnColor}`}
             href="https://enzoborrelli.github.io/informe-en-html/"
             target="_blank"
             rel="noopener noreferrer"
@@ -80,7 +82,7 @@ export default function About() {
         <p className="text-center flex flex-col items-center my-4 gap-2">
           {text.frontAbout_reactProj}
           <a
-            className="bg-teal-500 w-fit p-2 rounded-md border-2 border-teal-800 text-black hover:animate-bounce"
+            className={`${aboutBtnStyle} ${frontBtnColor}`}
             href="https://emrobots.com.ar/"
             target="_blank"
             rel="noopener noreferrer"
@@ -102,7 +104,7 @@ export default function About() {
         />
         <p className="flex flex-col items-center text-center">
           {text.frontAbout_YTChannel}
-          <span className="bg-teal-500 w-fit p-2 rounded-md border-2 border-teal-800 text-black hover:animate-bounce">
+          <span className={`${aboutBtnStyle} ${frontBtnColor}`}>
             <Link href="*/video/about" as="/video/about">
               {text.frontAbout_toVideo}
             </Link>

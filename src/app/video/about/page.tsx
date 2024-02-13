@@ -3,6 +3,7 @@ import {
   aboutBtnStyle,
   aboutDivStyle,
   mainStyle,
+  videoBtnColor,
 } from "@/components/stylesConst";
 import useLang from "@/languages/useLang";
 import Image from "next/image";
@@ -66,8 +67,8 @@ export default function About() {
         <p className="text-center flex flex-col items-center my-4 gap-2">
           {text.videoAbout_EnChannel}
           <a
-            className={aboutBtnStyle}
-            href="https://enzoborrelli.github.io/informe-en-html/"
+            className={`${aboutBtnStyle} ${videoBtnColor}`}
+            href="https://www.youtube.com/channel/UCCAe4j8TyxrDxHolFnYaTtA"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -77,7 +78,7 @@ export default function About() {
         <p className="text-center flex flex-col items-center my-4 gap-2">
           {text.videoAbout_tiktok}
           <a
-            className={aboutBtnStyle}
+            className={`${aboutBtnStyle} ${videoBtnColor}`}
             href="https://www.tiktok.com/@enderhell24"
             target="_blank"
             rel="noopener noreferrer"
@@ -92,7 +93,7 @@ export default function About() {
         <p className=" flex flex-col items-center text-center gap-3 mb-2">
           {text.videoAbout_Crash}
           <a
-            className={aboutBtnStyle}
+            className={`${aboutBtnStyle} ${videoBtnColor}`}
             href="https://www.youtube.com/watch?v=EDQzzgvHm6k"
             target="_blank"
             rel="noopener noreferrer"
@@ -104,7 +105,7 @@ export default function About() {
         <p className="flex flex-col items-center text-center gap-3">
           {text.videoAbout_Bonnie}
           <a
-            className={aboutBtnStyle}
+            className={`${aboutBtnStyle} ${videoBtnColor}`}
             href="https://www.youtube.com/watch?v=5HuvN8xV1yw"
             target="_blank"
             rel="noopener noreferrer"

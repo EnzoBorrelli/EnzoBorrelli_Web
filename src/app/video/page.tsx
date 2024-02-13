@@ -1,3 +1,7 @@
+import { mainStyle } from '@/components/stylesConst';
+import TopSection from '@/components/video/home/TopSection/TopSection';
+import IconSection from '@/components/video/home/iconsSection/iconsSection';
+import VideosSection from '@/components/video/home/videosSection/videosSection';
 import { Metadata } from 'next';
 import React from 'react'
 
@@ -8,6 +12,10 @@ export const metadata: Metadata = {
 
 export default function VideoHome() {
   return (
-    <div>VideoHome</div>
+    <main className={mainStyle}>
+      <TopSection/>
+      <IconSection/>
+      <VideosSection/>
+    </main>
   )
 }
